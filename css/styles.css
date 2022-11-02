@@ -193,16 +193,7 @@ align-items: center;
 .footer {
   background: #2f303a;
 }
-.logo-footer {
-  font-family: 'Raleway';
-  font-style: normal;
-    font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
-.logo-footer-span {
-  color: var(--main-title-color)
+.logo-footer { 
 }
 .footer-link {
   line-height: calc(24 / 14);
@@ -250,4 +241,11 @@ color: var(--text-title-color);
 .footer-address:hover,
 .footer-address:focus {
   color: var(--accent-color);
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
