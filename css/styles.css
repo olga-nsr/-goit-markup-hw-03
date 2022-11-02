@@ -4,6 +4,19 @@
   --text-title-color:#757575;
   --accent-color: #2196f3;
 }
+/**
+  |============================
+  | Base styles
+  |============================
+*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  background-color: var(--main-title-color);
+  color: var(--sacondary-title-color);
+}
+
 /* reset */
 
 /* Стили для обнуления верхних отступов у элементов  */
@@ -63,22 +76,25 @@ address {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* reset and*/
 
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  background-color: var(--main-title-color);
-  color:var(--sacondary-title-color);
-}
 .list {
   list-style: none;
 }
 .link {
   text-decoration: none;
 }
-/*-------Шапка сайту--*/
+.section {
+  padding-top: 94px;
+  padding-top: 94px;
+}
+
+/**
+  |============================
+  | Шапка сайту
+  |============================
+*/
 .header {
   background-color:var(--main-title-color);
 }
@@ -91,7 +107,7 @@ body {
   color: var(--accent-color);
 }
 .logo-header {
-  color: var(--sacondary-title-color);
+  color: var(--main-title-color);
 }
 
 .nav-link {
@@ -156,7 +172,11 @@ align-items: center;
   border: none;
   cursor: pointer;
 }
-/*-------Особливості--*/
+/**
+  |============================
+  | Особливості
+  |============================
+*/
 .about-sub-tittle {
    font-size: 14px;
   line-height: calc(16 / 14);
@@ -167,13 +187,21 @@ align-items: center;
 
   color: var(--text-title-color);
 }
-/*-------Чим ми займаємося--*/
+/**
+  |============================
+  | Чим займаємось
+  |============================
+*/
 .section-title {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
  }
-/*-------Наша команда--*/
+/**
+  |============================
+  | Наша команда
+  |============================
+*/
 .team-title {
     font-size: 36px;
   line-height: calc(42 / 36);
@@ -191,7 +219,11 @@ align-items: center;
   text-align: center;
    color: var(--text-title-color);
 }
-/*-------Підвал--*/
+/**
+  |============================
+  | Підвал
+  |============================
+*/
 .footer {
   background: #2f303a;
 }
