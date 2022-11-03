@@ -196,16 +196,14 @@ address {
 /*-------Герой--*/
 .hero {
   background-color: #2f303a;
-
+  text-align: center;
 }
 .hero-title {
+  align-items: center;
   padding-top: 200px;
-  padding-bottom: 30px;
-  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
@@ -226,20 +224,18 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
     border: none;
-  cursor: pointer;
-  text-align: center;
+  margin-bottom: 200px;
+  margin-top: 30px;
 
 
 }
-.order-button {
-  display:inline-block
-  font-size: 16px;
-  text-align: center;
-  display: flex;
 
 
 
-}
+
+
+
+
 /**
   |============================
   |        Особливості
@@ -342,6 +338,11 @@ margin-right: 30px;
 .footer {
   background: #2f303a;
 }
+.footer-wrapper {
+  padding-top: 60px;
+  
+  padding-bottom: 60px;
+}
 .logo-footer {
   font-family: 'Raleway';
   font-style: normal;
@@ -349,14 +350,15 @@ margin-right: 30px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  padding-top: 60px;
-  padding-left: 20px;
+
 }
 
 .logo-footer-span {
   color: var(--main-title-color);
 }
-
+.address {
+  padding-top: 20px;
+}
 .footer-link {
   line-height: calc(24 / 14);
 
