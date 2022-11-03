@@ -4,6 +4,10 @@
   --text-title-color: #757575;
   --accent-color: #2196f3;
   --items: 3;
+
+
+  --indent: 30px;
+  --items: 3;
 }
 /**
   |============================
@@ -17,6 +21,22 @@ body {
   background-color: var(--main-title-color);
   color: var(--sacondary-title-color);
 }
+/**
+  |============================
+  | Card set
+  |============================
+*/
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+
+}
+.card-set-item {
+flex-basic: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+}
+
 
 /* reset */
 
@@ -107,6 +127,7 @@ address {
 .header {
   background-color: var(--main-title-color);
 }
+
 .logo {
   font-family: 'Raleway';
   font-size: 26px;
@@ -229,6 +250,7 @@ address {
 .about-list {
   display: flax;
   align-items: center;
+
 }
 
 .about-tittle {
@@ -241,6 +263,7 @@ address {
 .about-sub-tittle {
   font-size: 14px;
   line-height: calc(16 / 14);
+  padding-bottom: 10px;
 }
 .about-description {
   line-height: 24px;
@@ -277,7 +300,9 @@ margin-right: 30px;
   | Наша команда
   |============================
 */
+.team-item {
 
+}
 .team-title {
   padding-top: 94px;
   padding-bottom: 50px;
@@ -285,16 +310,20 @@ margin-right: 30px;
   line-height: calc(42 / 36);
   text-align: center;
 }
-.team-lisi {
-  display: flex;
-  gap: 30px
+.team-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
-.team-sub-title {
+
+.team-name {
   padding-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
+  margin-bottom: 8px;
 }
 .team-description {
   padding-bottom: 30px;
@@ -344,7 +373,15 @@ margin-right: 30px;
 /*-------Фільтри--*/
 .list-filters {
   display: flex;
+  align-items: center;
+   grap: 8px;
 
+}
+.button-filters {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+  margin-bottom: 50px;
 
 }
 .button {
@@ -374,9 +411,20 @@ margin-right: 30px;
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+.portfolio-wrapper{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  border:1px solid #EEEEEE;
+  border-top: none;
+}
 .title-portfolio {
+  margin-bottom: 4px;
+  ;
+
   font-size: 18px;
   line-height: calc(36 / 18);
+
 }
 .portfolio-description {
   font-size: 16px;
