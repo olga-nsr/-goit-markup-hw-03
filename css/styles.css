@@ -238,30 +238,24 @@ address {
 
 }
 
-
-
-
-
-
-
 /**
   |============================
   |        Особливості
   |============================
 */
-
-
+.about {
+  padding-bottom: 0px;
+}
 .about-list {
-  display: flax;
+  display: flex;
   align-items: center;
+  gap: var(--indent);
 
 }
 
 .about-tittle {
-  width: 269px;
+  width: 270px;
   height: 98px;
-
-  padding-right: 30px;
 }
 
 .about-sub-tittle {
@@ -304,12 +298,12 @@ margin-right: 30px;
   | Наша команда
   |============================
 */
-.team-item {
-
+.team {
+background-color:#F5F4FA;
 }
 .team-title {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
@@ -322,7 +316,7 @@ margin-right: 30px;
 }
 
 .team-name {
-  padding-top: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -330,8 +324,8 @@ margin-right: 30px;
   margin-bottom: 8px;
 }
 .team-description {
-  padding-bottom: 30px;
-  padding-top: 10px;
+
+
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
@@ -346,11 +340,7 @@ margin-right: 30px;
 .footer {
   background: #2f303a;
 }
-.footer-wrapper {
-  padding-top: 60px;
 
-  padding-bottom: 60px;
-}
 .logo-footer {
   font-family: 'Raleway';
   font-style: normal;
@@ -365,7 +355,12 @@ margin-right: 30px;
   color: var(--main-title-color);
 }
 .address {
-  padding-top: 20px;
+ margin-top: 20px;
+}
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 .footer-link {
   line-height: calc(24 / 14);
@@ -384,7 +379,9 @@ margin-right: 30px;
 .list-filters {
   display: flex;
   align-items: center;
-   grap: 8px;
+   gap: 8px;
+   margin-left: auto;
+   margin-right: auto;
 
 }
 .button-filters {
@@ -395,7 +392,7 @@ margin-right: 30px;
 
 }
 .button {
-  padding: 5px 21px;
+
   min-width: 125px;
   min-height: 38px;
   font-size: 16px;
@@ -404,6 +401,7 @@ margin-right: 30px;
   border-style: none;
   cursor: pointer;
   border-radius: 4px;
+
 }
 .button:hover,
 .button:focus {
@@ -412,7 +410,7 @@ margin-right: 30px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .active-btn {
-  padding: 5px 24px;
+ 
   min-width: 72px;
   min-height: 37px;
   background-color: var(--accent-color);
