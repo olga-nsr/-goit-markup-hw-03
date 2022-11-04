@@ -126,15 +126,20 @@ address {
 
 .header {
   background-color: var(--main-title-color);
+  border: 1px solid #ECECEC;
 }
-
+.header-nav {
+  margin-right: auto;
+  align-items: center;
+  display: flex;
+}
 .logo {
   font-family: 'Raleway';
   font-size: 26px;
-  line-height: 31px;
+  line-height: calc(31 / 26);
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-right: 93px;
+  padding-right: 93px;
 }
 
 .logo-header {
@@ -144,7 +149,7 @@ address {
   display: flex;
   align-items: center;
   gap: 50px;
-  margin-right: 344px;
+  margin-right: auto;
 }
 .header-list-cont {
   display: flex;
@@ -152,8 +157,8 @@ address {
 }
 .nav-link {
   display: block;
-  padding-top: 52px;
-  padding-bottom: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
@@ -161,9 +166,7 @@ address {
   align-items: center;
 
 }
-.header-nav {
-  margin-right: auto;
-}
+
 .active {
   color: var(--accent-color);
 }
@@ -197,17 +200,22 @@ address {
 .hero {
   background-color: #2f303a;
   text-align: center;
+  padding-top : 200px;
+  padding-bottom: 200px;
+
+
 }
 .hero-title {
   align-items: center;
-  padding-top: 200px;
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
-
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-button {
 
@@ -224,7 +232,7 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
     border: none;
-  margin-bottom: 200px;
+
   margin-top: 30px;
 
 
@@ -340,7 +348,7 @@ margin-right: 30px;
 }
 .footer-wrapper {
   padding-top: 60px;
-  
+
   padding-bottom: 60px;
 }
 .logo-footer {
