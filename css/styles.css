@@ -384,13 +384,9 @@ background-color:#F5F4FA;
   justify-content: center;
   align-items: center;
    gap: 8px;
-
-}
-.button-filters {
-
 margin-bottom: 50px;
-
 }
+
 .button {
   min-width: 125px;
   min-height: 38px;
@@ -422,7 +418,7 @@ margin-bottom: 50px;
 
 
   border:1px solid #EEEEEE;
- 
+
   padding: 20px 24px;
 }
 .title-portfolio {
